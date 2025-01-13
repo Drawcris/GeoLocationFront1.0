@@ -1,0 +1,101 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Pełna wysokość widoku */
+  overflow: hidden; /* Ukryj przewijanie, aby zapobiec przewijaniu strony */
+}
+
+.RoutemapDiv {
+ 
+  margin-left: 25vh;
+  height: 80vh; /* Pełna wysokość widoku */
+  width: 100vh;
+  overflow: hidden; /* Ukryj przewijanie, aby zapobiec przewijaniu strony */
+}
+
+.SearchmapDiv {
+  height: 100vh; /* Pełna wysokość widoku */
+  overflow: hidden; /* Ukryj przewijanie, aby zapobiec przewijaniu strony */
+}
+
+.search-container {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 400px;
+  z-index: 1000; /* Ustaw wyszukiwarkę nad mapą */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.address-item {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.address-item:hover {
+  background-color: #f0f0f0;
+}
+
+.results-container {
+  position: absolute;
+  width: 100%;
+  top: 5%;
+  max-width: 400px; /* Możliwość dostosowania szerokości */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 25px;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px); /* Dostosuj w zależności od innych wysokości */
+}
+
+.result-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item:hover {
+  background-color: #f0f0f0;
+}
+
+.mapDiv {
+  flex: 1; /* Zajmij pozostałą przestrzeń */
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: calc(100% - 20px); /* Dostosuj szerokość przycisku */
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-marker {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  background-color: #050203;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.custom-marker i {
+  font-size: 18px;
+}
+
